@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header, nav, main, footer {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+form, table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos para botões do tipo reset */
+button[type="reset"] {
+    background-color: #f44336; /* Vermelho */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th a{
+    color: #000;
+    text-decoration: none;
+}
+
+th {
+    background-color: #ccc;
+}
+
+td {
+    text-align: center;
+}
+
+/**************** INICIO MENSAGENS ****************/
+/* Mensagem de Alerta personalizado */
+    .alert {
+        padding: 15px;
+        background-color: #ffeeba;
+        color: #856404;
+        border: 1px solid #856404;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .alert a{
+        text-decoration: none;
+        padding: 0px 5px;
+        color: #856404;
+        font-weight: bold;
+    }
+    .alert a:hover{
+        text-decoration: underline;
+    }
+    /* Estilizando o "x" para fechar a mensagem */
+    .alert .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #856404;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Estilizando o "x" ao passar o mouse */
+    .alert .close:hover {
+        color: #000;
+    }
+
+    /* Mensagem de Erro personalizado */
+    .erro {
+        padding: 15px;
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    /* Estilizando o "x" para fechar a mensagem */
+    .erro .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #721c24;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Estilizando o "x" ao passar o mouse */
+    .erro .close:hover {
+        color: #fff;
+    }
+
+    /* Mensagem de Sucesso personalizado */
+    .sucesso {
+        padding: 15px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    /* Estilizando o "x" para fechar a mensagem */
+    .sucesso .close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        color: #155724;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Estilizando o "x" ao passar o mouse */
+    .sucesso .close:hover {
+        color: #fff;
+    }
+    /**************** FIM MENSAGENS ****************/
+    input[readonly] {
+        background-color: #f4f4f4; /* Cor de fundo */
+        color: #666; /* Cor do texto */
+        border: 1px solid #ccc; /* Borda */
+        cursor: not-allowed; /* Cursor do mouse */
+    }
